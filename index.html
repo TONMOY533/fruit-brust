@@ -66,6 +66,12 @@
         img{
           display: inline-block !important;
         }
+
+        @media screen and (max-width: 768px){
+          .box{
+            display: none !important;
+          }
+        }
     </style>
 </head>
 
@@ -138,7 +144,7 @@
         </div>
 
       <!-- Inner box of slider -->
-            <div class=" relative w-10/12 mx-auto -mt-24 lg:grid grid-cols-3 lg:grid-cols-5 bg-white shadow-lg rounded-lg slider-inner-box">
+            <div class=" relative w-10/12 mx-auto -mt-24 lg:grid grid-cols-3 lg:grid-cols-5 bg-white shadow-lg rounded-lg box">
               <div class="flex justify-center items-center text-center">
                 <div class="py-12 px-12 space-y-4">
                   <img src="./images/fruit1.png" alt="" class="w-full">
