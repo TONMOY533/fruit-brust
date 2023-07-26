@@ -25,10 +25,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'fruit-color-a' : '#FFFFFF',
-                        'fruit-color-b' : '#12121266',
-                        'fruit-color-c' : '#121212',
-                        'fruit-color-d' : "#F85559",
+                        'fruit-color-1' : '#FFFFFF',
+                        'fruit-color-2' : '#12121266',
+                        'fruit-color-3' : '#121212',
+                        'fruit-color-4' : "#F85559",
                     },
                     backgroundImage: {
                         'hero-bg-a': "url('./images/banner1.png')",
@@ -138,7 +138,7 @@
         </div>
 
       <!-- Inner box of slider -->
-            <div class=" relative w-10/12 mx-auto mt-10px  lg-mt-24 grid grid-cols-3 lg:grid-cols-5 bg-white shadow-lg rounded-lg slider-inner-box">
+            <div class=" relative w-10/12 mx-auto  -mt-24 lg:grid grid-cols-3 lg:grid-cols-5 bg-white shadow-lg rounded-lg slider-inner-box">
               <div class="flex justify-center items-center text-center">
                 <div class="py-12 px-12 space-y-4">
                   <img src="./images/fruit1.png" alt="" class="w-full">
@@ -174,7 +174,134 @@
             </div>
         </div>  
 </header>
-    
 
+     <!-- Main section -->
+     <main class="xl:container mx-auto mt-[140px]">
+        <!-- Deal of the day -->
+        <section class="mb-16">
+            <!-- Countdown section -->
+            <div class="pb-12 flex justify-between">
+                <div class="">
+                    <h3 class="text-4xl font-extrabold mb-6">Meet the team section</h3>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div class="flex gap-5 justify-around">
+                        <div class="">
+                          <span class="countdown text-4xl font-extrabold">
+                            <span style="--value:15;"></span>
+                          </span>
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <p class="text-fruit-color-2">Days</p>
+                        </div> 
+                        <div>
+                          <span class="countdown text-4xl font-extrabold">
+                            <span style="--value:10;"></span>
+                          </span>
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <p class="text-fruit-color-2">Hours</p>
+                        </div> 
+                        <div>
+                          <span class="countdown text-4xl font-extrabold">
+                            <span style="--value:24;"></span>
+                          </span>
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <p class="text-fruit-color-2">Minutes</p>
+                        </div> 
+                        <div>
+                          <span class="countdown text-4xl font-extrabold">
+                            <span style="--value:23;"></span>
+                          </span>
+                          <p class="text-fruit-color-2">Seconds</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- Fruit item section -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit6.png" alt="Shoes" class="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h4 class="text-2xl font-bold text-fruit-color-3">12.90$ - 18.85$</h4>
+                      <span class="w-3/4 h-[1px] bg-gray-300"></span>
+                      <h5 class="my-6 text-fruit-color-2">Apples</h5>
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4" checked="">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                      </div>
+                      <p class="mt-8"><a href="#">Details</a></p>
+                      
+                    </div>
+                  </div>
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit7.png" alt="Shoes" class="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h4 class="text-2xl font-bold text-fruit-color-3">12.90$ - 18.85$</h4>
+                        <span class="w-3/4 h-[1px] bg-gray-300"></span>
+                        <h5 class="my-6 text-fruit-color-2">Apples</h5>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4" checked="">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        </div>
+                        <p class="mt-8"><a href="#">Details</a></p>
+                        
+                      </div>
+                  </div>
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit8.png" alt="Shoes" class="rounded w-[50%]">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h4 class="text-2xl font-bold text-fruit-color-3 mt-6">12.90$ - 18.85$</h4>
+                        <span class="w-3/4 h-[1px] bg-gray-300"></span>
+                        <h5 class="my-6 text-fruit-color-2">Apples</h5>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4" checked="">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        </div>
+                        <p class="mt-8"><a href="#">Details</a></p>
+                        
+                      </div>
+                  </div>
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit9.png" alt="Shoes" class="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h4 class="text-2xl font-bold text-fruit-color-3">12.90$ - 18.85$</h4>
+                        <span class="w-3/4 h-[1px] bg-gray-300"></span>
+                        <h5 class="my-6 text-fruit-color-2">Apples</h5>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4" checked="">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-fruit-color-4">
+                        </div>
+                        <p class="mt-8"><a href="#">Details</a></p>
+                        
+                      </div>
+                  </div>
+            </div>
+            <div class="text-center">
+                <button class="fruit-primary-btn mt-8">Shop All</button>
+            </div>
+        </section>
+</main>
+    
+</body>
     
 </html>
