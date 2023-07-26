@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-burst</title>
+
+    <!-- Tailwind and DaisyUI links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--google font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- font asm link -->
+    <script src="https://kit.fontawesome.com/0bd4eed3e5.js" crossorigin="anonymous"></script>
+
+        <!-- Customization tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-color-a' : '#FFFFFF',
+                        'fruit-color-b' : '#12121266',
+                        'fruit-color-c' : '#121212',
+                        'fruit-color-d' : "#F85559",
+                    },
+                    backgroundImage: {
+                        'hero-bg-a': "url('./images/banner1.png')",
+                        'hero-bg-b': "url('./images/banner2.png')",
+                        'hero-bg-c': "url('./images/banner3.png')",
+                        'hero-bg-d': "url('./images/banner4.png')",
+                  }
+            }
+        }
+      }
+    </script>
+
+    <style>
+        .lay-out{
+ padding: 50px 140px 100px;
+ 
+        }
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .fruit-primary-btn{
+          background-color: #ff3d40;
+          color: #fff;
+          border-radius: 8px;
+          font-weight: 900;
+          border: none;
+          padding: 20px 30px;
+        }
+
+        .fruit-primary-btn:hover{
+          background-color: #8303be;
+        }
+
+        img{
+          display: inline-block !important;
+        }
+    </style>
+</head>
+
+
+<body class="font-lato text-base">
+<header>
+
+
+
+     <!-- Hero Slider Area -->
+     <div >
+        <!-- Main slider -->
+        <div class="carousel w-full h-[600px]">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div id="slide1" class="carousel-item relative w-full bg-hero-bg-a rounded-lg">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+        
+                  <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                  <p>We supply highly quality organic products</p>
+                  <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full bg-hero-bg-b rounded-lg">
+          
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+        
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+        </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full bg-hero-bg-c rounded-lg">
+          
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  text-[#e63b3b]">
+        
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+        </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full bg-hero-bg-d rounded-lg">
+          
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+        
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+        </div>
+          </div>
+        </div>
+
+      <!-- Inner box of slider -->
+            <div class=" relative w-10/12 mx-auto mt-10px  lg-mt-24 grid grid-cols-3 lg:grid-cols-5 bg-white shadow-lg rounded-lg slider-inner-box">
+              <div class="flex justify-center items-center text-center">
+                <div class="py-12 px-12 space-y-4">
+                  <img src="./images/fruit1.png" alt="" class="w-full">
+                  <h4 class="text-fruit-color-2 font-[20px]">graps</h4>
+                </div>
+              </div>
+              <div class="flex justify-center items-center text-center">
+                <div class="py-12 px-12 space-y-4">
+                  <img src="./images/fruit2.png" alt="" class="w-full">
+                  <h4 class="text-fruit-color-2 font-[20px]">Strawberry</h4>
+                </div>
+              </div>
+              <div class="flex justify-center items-center text-center">
+                <div class="py-12 px-12 space-y-4">
+                  <img src="./images/fruit3.png" alt="" class="w-full">
+                  <h4 class="text-fruit-color-2 font-[20px] ">Mango</h4>
+                </div>
+              </div>
+              <div class="flex justify-center items-center text-center">
+                <div class="py-12 px-12 space-y-4">
+                  <img src="./images/fruit4.png" alt="" class="w-full">
+                  <h4 class="text-fruit-color-2 font-[20px] ">Strawberry</h4>
+                </div>
+              </div>
+              <div class="flex justify-center items-center text-center">
+                <div class="py-12 px-12 space-y-4">
+                  <img src="./images/fruit5.png" alt="" class="w-full">
+                  <h4 class="text-fruit-color-2 font-[20px]">Strawberry</h4>
+                </div>
+              </div>
+              
+              
+            </div>
+        </div>  
+</header>
+    
+
+    
+</html>
