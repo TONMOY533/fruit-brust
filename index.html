@@ -79,7 +79,51 @@
 <body class="font-lato text-base">
 <header>
 
+<nav>
+   <!-- nav ber -->
+   <div class="navbar lg:bg-[#F85559] rounded-full flex-row-reverse lg:flex-row ">
+    <div class="navbar-end lg:navbar-start">
+      <div class="dropdown ">
+        <label tabindex="0" class="btn btn-ghost  lg:hidden">
+            <i class="fa-solid fa-bars text-3xl "></i>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-1 z-[1] overflow-x-hidden shadow bg-base-100 rounded-box w-20 text-[8px] ">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+     
+      <div class=" hidden lg:flex ">
+    
+      <ul class="menu  items-center  menu-horizontal text-[#FFF] font-medium text-[14px] ">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Shop</a></li>
+        <li><a>All Fruits</a></li>
+     
+      </ul>
 
+    </div>
+
+    </div>
+    <div class="navbar-start justify-start lg:justify-center lg:navbar-center ">
+
+        <div class="flex items-center gap-2">
+
+<img class="lg:w-8 w-7" src="images/logo.png" alt="">
+<span class="lg:text-3xl text-2xl font-bold text-[#121212] lg:text-[#FFF]">Fruit Burst</span>
+
+</div>
+
+    </div>
+    <div class="navbar-end hidden lg:flex  h-3 mr-3 ">
+        <input type="text"  placeholder="Search here " class=" relative input input-bordered w-[300px] h-[40px] rounded-2xl" /> <i class="fa-solid fa-magnifying-glass text-black absolute mr-3"></i>
+    </div>
+  </div>
+</section>
+</nav>
 
      <!-- Hero Slider Area -->
      <div >
@@ -180,6 +224,7 @@
             </div>
         </div>  
 </header>
+
 
      <!-- Main section -->
      <main class="xl:container mx-auto mt-[140px]">
@@ -420,16 +465,14 @@
               <li><a href="#">Support</a></li>
               <li><a href="#">My Account</a></li>
           </ul>
-          <!--
+          
             <div class="space-x-10">
-            <a href="#"><img src="./images/f-twitter.png" alt=""></a>
-            <a href="#"><img src="./images/f-facebook.png" alt=""></a>
-            <a href="#"><img src="./images/f-youtube.png" alt=""></a>
-            <a href="#"><img src="./images/f-linkedin.png" alt=""></a>
-            <a href="#"><img src="./images/f-instagram.png" alt=""></a>
-            <a href="#"><img src="./images/f-apple.png" alt=""></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            
           </div> 
-          --> 
+          
       </div>
   </div>
 </footer>
